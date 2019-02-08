@@ -23,7 +23,7 @@ public class RestaurantController {
 	public String index(Restaurant restaurant, Model model) {
 		restaurants = (List<Restaurant>) restaurantRepository.findAll();
 		model.addAttribute("restaurants", restaurants);
-		return "restaurant/index";
+		return "Restaurant/index";
 	}
 	
 	@GetMapping(value="/new")
