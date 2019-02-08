@@ -29,7 +29,7 @@ public class RestaurantController {
 	@GetMapping(value="/new")
 	public String addNew(Restaurant restaurant){
 		
-		return "restaurant/new";
+		return "Restaurant/new";
 	}
 
 	@PostMapping(value="/new")
@@ -40,7 +40,7 @@ public class RestaurantController {
 		model.addAttribute("phoneNumber", restaurant.getPhoneNumber());
 		model.addAttribute("address", restaurant.getAddress());
 		
-		return "restaurant/result";
+		return "Restaurant/result";
 		
 	
 		
